@@ -5,20 +5,20 @@
 class Homete < Formula
   desc "Praise you."
   homepage ""
-  version "0.0.5"
+  version "1.0.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/sho-jp/homete/releases/download/v0.0.5/homete_0.0.5_Darwin_x86_64.tar.gz"
-      sha256 "b8efea8af9747ecfa40fb809a1e07c527be16667a2e8961807c76fd3fcf2354e"
+    if Hardware::CPU.arm?
+      url "https://github.com/sho-jp/homete/releases/download/v1.0.0/homete_1.0.0_Darwin_arm64.tar.gz"
+      sha256 "e89760161536b3ccadc41e292549f9e4c9bcfb9d0f89ff5f150f4aad217993f4"
 
       def install
         bin.install "homete"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/sho-jp/homete/releases/download/v0.0.5/homete_0.0.5_Darwin_arm64.tar.gz"
-      sha256 "30d617a11d924ee89aac8b4c1d7f28774dbaff39a0a62a3fceb8f6a890514f66"
+    if Hardware::CPU.intel?
+      url "https://github.com/sho-jp/homete/releases/download/v1.0.0/homete_1.0.0_Darwin_x86_64.tar.gz"
+      sha256 "94d118d802037086911f18b00b6058859680474f18b3825a889285f47784d2c5"
 
       def install
         bin.install "homete"
@@ -28,16 +28,16 @@ class Homete < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/sho-jp/homete/releases/download/v0.0.5/homete_0.0.5_Linux_x86_64.tar.gz"
-      sha256 "702f4c07c14df366a44f66489ce481b0b8de3c0d7d7ead45697e8811f5a7367d"
+      url "https://github.com/sho-jp/homete/releases/download/v1.0.0/homete_1.0.0_Linux_x86_64.tar.gz"
+      sha256 "6455074cf7c9df88416bf0c94703d9b450f6d4cfe1049eca1b30eeea12797967"
 
       def install
         bin.install "homete"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sho-jp/homete/releases/download/v0.0.5/homete_0.0.5_Linux_arm64.tar.gz"
-      sha256 "2731fabcd9c26f8c7cb6abff5448d9e171e3842c2d06d03a4bc27d70c1a6c0a3"
+      url "https://github.com/sho-jp/homete/releases/download/v1.0.0/homete_1.0.0_Linux_arm64.tar.gz"
+      sha256 "abff72e1f6815a8701c468c07eef4b3616340e3b9290690d33c06405dac3e7e2"
 
       def install
         bin.install "homete"
