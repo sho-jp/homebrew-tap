@@ -5,20 +5,20 @@
 class Homete < Formula
   desc "Praise you."
   homepage ""
-  version "0.0.2"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sho-jp/homete/releases/download/v0.0.2/homete_0.0.2_Darwin_x86_64.tar.gz"
-      sha256 "515902431b8e04b871d8f18fff5df8a109c04247a337aba132fea79370574864"
+      url "https://github.com/sho-jp/homete/releases/download/v0.0.4/homete_0.0.4_Darwin_x86_64.tar.gz"
+      sha256 "784acbe2c31e5ec4319274a99cb120872e18d26a1d71a0cd2c7d9c6399aa5030"
 
       def install
         bin.install "homete"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sho-jp/homete/releases/download/v0.0.2/homete_0.0.2_Darwin_arm64.tar.gz"
-      sha256 "296460947c33e4e9b0ec09ef00cb9e80d5d0fd8b81ff7fb5b5aa0bfaae92cbbd"
+      url "https://github.com/sho-jp/homete/releases/download/v0.0.4/homete_0.0.4_Darwin_arm64.tar.gz"
+      sha256 "1f9a5c4224d2333fa093760d3c720afca087799b9604cc0bcb21d62ad2c526b6"
 
       def install
         bin.install "homete"
@@ -28,16 +28,16 @@ class Homete < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/sho-jp/homete/releases/download/v0.0.2/homete_0.0.2_Linux_x86_64.tar.gz"
-      sha256 "e79466da385db72cf171db6f7c667e5fa1a11a359a284c23b1f36a88c95e5cc8"
+      url "https://github.com/sho-jp/homete/releases/download/v0.0.4/homete_0.0.4_Linux_x86_64.tar.gz"
+      sha256 "d9b4eba51c6fff6f941a2a29969378d34e88a790dda3e7c18a952f80bb7dd77d"
 
       def install
         bin.install "homete"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sho-jp/homete/releases/download/v0.0.2/homete_0.0.2_Linux_arm64.tar.gz"
-      sha256 "c4c6443edc74708de4822c0a2b8a0c684f2b3b6b3a4a74c279cd69b6572809a6"
+      url "https://github.com/sho-jp/homete/releases/download/v0.0.4/homete_0.0.4_Linux_arm64.tar.gz"
+      sha256 "8729cc9abd67b089e24ef6759d3e448a42ac26fb3919e1971f103c7001b3faa7"
 
       def install
         bin.install "homete"
